@@ -1,4 +1,7 @@
-let square x = x * x;;
+let rec sum l =
+  match l with
+  | [] -> 0
+  | h :: t -> h + sum t;;
 
-print_int (square 2);;
+print_int (sum [1; 2; 3]);;
 print_newline ()
