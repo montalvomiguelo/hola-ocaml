@@ -1,10 +1,17 @@
-let rec combine a b =
-  match a with
-  | [] -> b
-  | h :: t -> h :: combine t b
+let rec total l =
+  match l with
+  | [] -> 0
+  | h :: t -> h + total t
 ;;
 
-let result = combine [ 1; 2 ] [ 3; 4 ];;
+let rec map f l =
+  match l with
+  | [] -> []
+  | h :: t -> f h :: map f t
+;;
 
-print_int (List.length result);;
+let res = map total [ [ 1; 2 ]; [ 3; 4 ] ];;
+
+print_int (List.nth res 0);;
+print_int (List.nth res 1);;
 print_newline ()
