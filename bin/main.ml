@@ -21,3 +21,13 @@ let res = map (fun x -> x + 1) [ 1; 2 ];;
 print_int (List.nth res 0);;
 print_int (List.nth res 1);;
 print_newline ()
+
+let person = "larry", 47, 165, 'M'
+let name, age, _, sex = person;;
+
+print_string name;;
+print_newline ();;
+print_int age;;
+print_newline ();;
+print_char sex;;
+print_newline ()
