@@ -39,4 +39,14 @@ let rec total t =
   | Node (l, x, r) -> total l + x + total r
 ;;
 
-print_int (total t)
+let rec flip t =
+  match t with
+  | Leaf -> Leaf
+  | Node (l, x, r) -> Node (flip r, x, flip l)
+;;
+
+let all = total t
+let flipped = flip t;;
+
+print_int all;;
+Printf.printf "%b" (t = flip flipped)
