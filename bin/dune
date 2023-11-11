@@ -1,4 +1,4 @@
 (executable
- (public_name holaocaml)
+ (public_name hola)
  (name main)
- (libraries holaocaml))
+ (libraries lib))
