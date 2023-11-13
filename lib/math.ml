@@ -1,8 +1,11 @@
 let add x y = x + y
 let sub x y = x - y
-let div = (fun x y -> x / y)
-let square = fun x -> x * x
+let div x y = x / y
+let square x = x * x
+
 let plus_two =
   let two = 2 in
   fun x -> x + two
-let average = fun x -> fun y -> (x +. y) /. 2.0
+;;
+
+let average x y = (x +. y) /. 2.0
