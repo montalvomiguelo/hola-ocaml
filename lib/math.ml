@@ -5,3 +5,4 @@ let square = fun x -> x * x
 let plus_two =
   let two = 2 in
   fun x -> x + two
+let average = fun x -> fun y -> (x +. y) /. 2.0
