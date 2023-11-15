@@ -13,5 +13,6 @@ let () =
   print_endline (string_of_int result);
   let result = Math.average 2. 3. in
   print_endline (string_of_float result);
-  Utils.join_strings "hola" "mundo" ~separator:"-"
+  Utils.join_strings "hola" "mundo" ~separator:"-";
+  Utils.lg_or_sm 3
 ;;
