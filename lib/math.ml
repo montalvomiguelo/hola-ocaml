@@ -9,3 +9,4 @@ let plus_two =
 ;;
 
 let average x y = (x +. y) /. 2.0
+let rec factorial n = if n = 0 then 1 else n * factorial (n - 1)
