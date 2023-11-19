@@ -14,5 +14,7 @@ let () =
   let result = Math.average 2. 3. in
   print_endline (string_of_float result);
   let result = Math.factorial 4 in
-  print_endline (string_of_int result)
+  print_endline (string_of_int result);
+  let result = Math.even 5 in
+  print_endline (string_of_bool result)
 ;;
