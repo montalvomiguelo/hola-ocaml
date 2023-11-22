@@ -8,3 +8,4 @@ val factorial : int -> int
 val even : int -> bool
 val odd : int -> bool
 val range : int -> int -> int list
+val sum : int list -> int
