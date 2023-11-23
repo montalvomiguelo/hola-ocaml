@@ -18,5 +18,7 @@ let () =
   let result = Math.even 5 in
   print_endline (string_of_bool result);
   let result = Math.sum [ 1; 4; 3; 2; 5 ] in
+  print_endline (string_of_int result);
+  let result = Math.len [ true; false; true; true; false ] in
   print_endline (string_of_int result)
 ;;

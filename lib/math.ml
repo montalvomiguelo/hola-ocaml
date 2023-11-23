@@ -21,3 +21,9 @@ let rec sum u =
   | [] -> 0
   | h :: t -> h + sum t
 ;;
+
+let rec len l =
+  match l with
+  | [] -> 0
+  | _ :: t -> 1 + len t
+;;
